@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/register"
+        android:text="Register"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/userNameEt"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Enter username"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/register"/>
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Enter email"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/userNameEt"/>
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Enter password"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/emailEt"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/passwordEt"/>
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/progressBar"/>
+
+    <TextView
+        android:id="@+id/loginTV"
+        android:text="Click to login"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerBtn"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

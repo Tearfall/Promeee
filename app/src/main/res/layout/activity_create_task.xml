@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/entryFieldsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/enterTaskET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="enter to-do"/>
+        <EditText
+            android:id="@+id/enterDateET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="enter date"/>
+        <EditText
+            android:id="@+id/enterTimeET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="enter time"/>
+        <EditText
+            android:id="@+id/enterNoteET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="enter note"/>
+        <Button
+            android:id="@+id/createBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Create"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/gotoHomeTv"
+        android:text="Home"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entryFieldsLayout"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+</RelativeLayout>
